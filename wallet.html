@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wallet - Watch & Earn</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#111827;
+}
+
+header{
+    background:#111827;
+    color:white;
+    padding:18px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:21px;
+    font-weight:bold;
+}
+
+.back{
+    background:white;
+    color:#111827;
+    border:none;
+    padding:9px 14px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.container{
+    width:92%;
+    max-width:650px;
+    margin:25px auto;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.balance{
+    background:#2563eb;
+    color:white;
+    padding:28px;
+    border-radius:18px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.balance small{
+    opacity:.85;
+}
+
+.money{
+    font-size:38px;
+    font-weight:bold;
+    margin:8px 0;
+}
+
+.points{
+    font-size:14px;
+}
+
+.actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.action{
+    background:white;
+    border:none;
+    padding:18px;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:bold;
+    box-shadow:0 4px 15px rgba(0,0,0,.06);
+}
+
+.withdraw{
+    background:#16a34a;
+    color:white;
+}
+
+.history{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.06);
+}
+
+.history h2{
+    margin-bottom:15px;
+}
+
+.transaction{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+}
+
+.transaction:last-child{
+    border-bottom:none;
+}
+
+.earned{
+    color:#16a34a;
+    font-weight:bold;
+}
+
+.no-history{
+    color:#6b7280;
+    text-align:center;
+    padding:15px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#6b7280;
+    font-size:13px;
+}
+
+@media(max-width:500px){
+
+    .actions{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Watch & Earn
+    </div>
+
+    <button class="back" onclick="location.href='dashboard.html'">
+        Dashboard
+    </button>
+
+</header>
+
+<div class="container">
+
+    <h1>💰 My Wallet</h1>
+
+    <div class="balance">
+
+        <small>Available Balance</small>
+
+        <div class="money">
+            Rs. 0.00
+        </div>
+
+        <div class="points">
+            0 Points
+        </div>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="action" onclick="location.href='dashboard.html'">
+            🎬 Earn Points
+        </button>
+
+        <button class="action withdraw" onclick="withdraw()">
+            💸 Withdraw
+        </button>
+
+    </div>
+
+    <div class="history">
+
+        <h2>📜 Transaction History</h2>
+
+        <div class="no-history">
+            No transactions yet.
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Watch & Earn
+</footer>
+
+<script>
+
+function withdraw(){
+
+    alert("Withdrawal system will be connected later.");
+
+}
+
+</script>
+
+</body>
+</html>
