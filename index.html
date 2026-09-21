@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch & Earn</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #111827;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .login {
+      background: white;
+      color: #111827;
+      border: none;
+      padding: 9px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 45px 20px 30px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    .balance {
+      width: 90%;
+      max-width: 420px;
+      margin: 20px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .balance small {
+      color: #6b7280;
+    }
+
+    .money {
+      font-size: 34px;
+      font-weight: bold;
+      margin: 8px 0 20px;
+    }
+
+    .watch-btn {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 12px;
+      background: #16a34a;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .watch-btn:hover {
+      background: #15803d;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      width: 90%;
+      max-width: 700px;
+      margin: 25px auto;
+    }
+
+    .card {
+      background: white;
+      padding: 18px 10px;
+      text-align: center;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      color: #6b7280;
+      font-size: 13px;
+    }
+
+    @media (max-width: 500px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Watch & Earn</div>
+    <button class="login">Login</button>
+  </header>
+
+  <section class="hero">
+    <h1>Watch Ads. Earn Points.</h1>
+    <p>Complete eligible rewarded ads and collect points.</p>
+  </section>
+
+  <div class="balance">
+    <small>Your Balance</small>
+    <div class="money">Rs. 0.00</div>
+
+    <button class="watch-btn" onclick="watchAd()">
+      🎬 Watch Ad & Earn
+    </button>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>0</h3>
+      <p>Total Ads</p>
+    </div>
+
+    <div class="card">
+      <h3>0</h3>
+      <p>Total Points</p>
+    </div>
+
+    <div class="card">
+      <h3>Rs. 0</h3>
+      <p>Withdrawn</p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Watch & Earn
+  </footer>
+
+  <script>
+    function watchAd() {
+      alert("Rewarded ad system will be connected here.");
+    }
+  </script>
+
+</body>
+</html>
