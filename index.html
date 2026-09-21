@@ -32,13 +32,28 @@
       font-weight: bold;
     }
 
+    .header-buttons {
+      display: flex;
+      gap: 8px;
+    }
+
+    .login,
+    .signup {
+      border: none;
+      padding: 9px 14px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
     .login {
       background: white;
       color: #111827;
-      border: none;
-      padding: 9px 16px;
-      border-radius: 8px;
-      font-weight: bold;
+    }
+
+    .signup {
+      background: #2563eb;
+      color: white;
     }
 
     .hero {
@@ -135,6 +150,10 @@
       .hero h1 {
         font-size: 27px;
       }
+
+      .signup {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -142,22 +161,43 @@
 <body>
 
   <header>
+
     <div class="logo">Watch & Earn</div>
-    <button class="login">Login</button>
+
+    <div class="header-buttons">
+
+      <button class="login" onclick="location.href='login.html'">
+        Login
+      </button>
+
+      <button class="signup" onclick="location.href='signup.html'">
+        Sign Up
+      </button>
+
+    </div>
+
   </header>
 
   <section class="hero">
+
     <h1>Watch Ads. Earn Points.</h1>
-    <p>Complete eligible rewarded ads and collect points.</p>
+
+    <p>
+      Complete eligible rewarded ads and collect points.
+    </p>
+
   </section>
 
   <div class="balance">
+
     <small>Your Balance</small>
+
     <div class="money">Rs. 0.00</div>
 
     <button class="watch-btn" onclick="watchAd()">
       🎬 Watch Ad & Earn
     </button>
+
   </div>
 
   <div class="cards">
@@ -184,9 +224,11 @@
   </footer>
 
   <script>
+
     function watchAd() {
       alert("Rewarded ad system will be connected here.");
     }
+
   </script>
 
 </body>
