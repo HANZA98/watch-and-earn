@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up - Watch & Earn</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#111827,#2563eb);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:400px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:8px;
+    color:#111827;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+}
+
+.login{
+    text-align:center;
+    margin-top:20px;
+    color:#666;
+}
+
+.login a{
+    color:#2563eb;
+    font-weight:bold;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Create Account</h1>
+
+<p class="subtitle">Join Watch & Earn</p>
+
+<form onsubmit="signup(event)">
+
+<input type="text" id="name"
+placeholder="Full Name" required>
+
+<input type="email" id="email"
+placeholder="Email Address" required>
+
+<input type="password" id="password"
+placeholder="Password" required>
+
+<input type="password" id="confirm"
+placeholder="Confirm Password" required>
+
+<button type="submit">Create Account</button>
+
+</form>
+
+<div class="login">
+Already have an account?
+<a href="login.html">Login</a>
+</div>
+
+</div>
+
+<script>
+function signup(event){
+
+event.preventDefault();
+
+let password = document.getElementById("password").value;
+let confirm = document.getElementById("confirm").value;
+
+if(password !== confirm){
+alert("Passwords do not match!");
+return;
+}
+
+alert("Account system will be connected to the database next.");
+
+}
+</script>
+
+</body>
+</html>
